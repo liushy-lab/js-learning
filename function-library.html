@@ -39,7 +39,10 @@ function factorial(num) {
 }
 
 function rooted(num) {
-    return (num * num) / num;
+    for (var i = 0; i * i <= num; num++){
+    if (i * i === num)
+  }
+    return i;
 }
 
 input.addEventListener('change', () => {
