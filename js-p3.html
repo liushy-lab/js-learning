@@ -6,12 +6,25 @@
 </head>
 <body>
   <script>
-  num = Number(prompt('Number?'));
-  function add7() {;
+
+  function add7() {
+    num = Number(prompt('Number?'))
     return num + 7;
   }
   console.log(add7());
 
+  function multiply() {
+    num = Number(prompt('Number?'))
+    return num * num;
+  }
+  console.log(multiply());
+
+  function capitalize(string){
+    string = prompt('Your string')
+    if (typeof string !== 'string') return '';
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+console.log(capitalize());
   </script>
 </body>
 </html>
