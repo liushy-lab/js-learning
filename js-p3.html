@@ -7,24 +7,29 @@
 <body>
   <script>
 
-  function add7() {
+  function add7(num) {
     num = Number(prompt('Number?'))
     return num + 7;
   }
-  console.log(add7());
+  console.log(add7(num));
 
-  function multiply() {
+  function multiply(num) {
     num = Number(prompt('Number?'))
     return num * num;
   }
-  console.log(multiply());
+  console.log(multiply(num));
 
   function capitalize(string){
-    string = prompt('Your string')
-    if (typeof string !== 'string') return '';
+    string = prompt('Your string in letters')
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
-console.log(capitalize());
+  console.log(capitalize());
+
+  function lastletter(string){
+    string = prompt('Your string in letters')
+    return string.slice(-1);
+  }
+  console.log(lastletter());
   </script>
 </body>
 </html>
